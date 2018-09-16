@@ -8,7 +8,9 @@ if (isset($_POST['submit'])) {
 
         $new_project = array(
             "name" => $_POST['name'],
-            "da" =>
+            "da" => $_POST['da'],
+            "date" => $_POST['date'],
+            "team" => $_POST['team']
         );
 
         $sql = sprintf(
