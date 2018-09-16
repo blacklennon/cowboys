@@ -120,7 +120,7 @@ o ci aspellabore num sinum nos quidus, tquaeped ut quo omnisi iunti dipsunt Ecti
                 <div class="manifest"></div>
     </body>
     <script>
-        const widthResize = window.innerWidth / 1210;
+        const widthResize = window.innerWidth / 1200;
         const heightResize = window.innerHeight / 800;
         const sizer = document.getElementById('page_sizer')
 
@@ -128,10 +128,10 @@ o ci aspellabore num sinum nos quidus, tquaeped ut quo omnisi iunti dipsunt Ecti
         if (widthResize > heightResize) {
             sizer.style.marginLeft=`${(widthResize - heightResize) * 630}px`
         } else sizer.style.marginLeft=`0px`;
-        
+
         if(window.attachEvent) {
             window.attachEvent('onresize', function() {
-                const widthResize = window.innerWidth / 1210;
+                const widthResize = window.innerWidth / 1200;
                 const heightResize = window.innerHeight / 800;
                 sizer.style.transform = `scale(${widthResize < heightResize ? widthResize : heightResize})`;
                 if (widthResize > heightResize) {
@@ -141,14 +141,14 @@ o ci aspellabore num sinum nos quidus, tquaeped ut quo omnisi iunti dipsunt Ecti
         }
         else if(window.addEventListener) {
             window.addEventListener('resize', function() {
-                const widthResize = window.innerWidth / 1210;
+                const widthResize = window.innerWidth / 1200;
                 const heightResize = window.innerHeight / 800;
                 sizer.style.transform = `scale(${widthResize < heightResize ? widthResize : heightResize})`;
                 if (widthResize > heightResize) {
                     sizer.style.marginLeft=`${(widthResize - heightResize) * 630}px`
                 } else sizer.style.marginLeft=`0px`;
             }, true);
-        }    
+        }
     </script>
     <script type="text/javascript" src="scripts/imgHorizontalSlider.js"> </script>
     <script type="text/javascript" src="scripts/imgVerticalSlider.js"> </script>
