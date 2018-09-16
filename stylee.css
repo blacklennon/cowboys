@@ -100,7 +100,7 @@ body{
   top: -400px;
   width: 1200px;
   height: 270px;
-  background-color: #DDD;
+  font-size: 1.5rem;
   transition: top 0.3s;
   display: flex;
   justify-content: space-evenly;
@@ -117,7 +117,7 @@ body{
 
 .bottom_contact_text ul li::before {
     position: absolute;
-    left: -8px;
+    left: -25px;
 }
 
 .contact-tel::before { content: 'Tel.' }
@@ -263,7 +263,7 @@ body{
 
 .projectDiv {
   width: 850px;
-  height:600px; 
+  height:600px;
   background-color: #002183;
   margin:auto;
 }
