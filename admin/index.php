@@ -9,22 +9,22 @@
         <title></title>
     </head>
     <body>
-        <form action="add_project.php" method="post">
+        <form action="" method="post">
             <label for="name">Nom du projet:</label>
             <input type="text" name="name" value="" />
             <br>
-            <label for="da">Direction artistique:</label>
-            <input type="text" name="da" value="" />
+            <label for="text">Text:</label>
+            <input type="text" name="text" value="">
             <br>
-            <label for="date">Date du projet:</label>
-            <input type="date" name="date" value="">
-            <br>
-            <label for="team">Equipe:</label>
-            <input type="text" name="team" value="" />
+            <label for="image">Image:</label>
+            <input type="file"
+                id="image" name="image"
+                accept="image/*, video/*" />
             <br>
 
             <input type="submit" name="submit" value="Envoyer">
         </form>
+        <button onClick="addImageInput()">+</button>
 
         <div>
             <?php 
@@ -39,3 +39,9 @@
         </div>
     </body>
 </html>
+
+<script>
+    function addImageInput() {
+        // document.getElementById('image').after(document.createElement('input'))
+    }
+</script>
