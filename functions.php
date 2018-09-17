@@ -16,9 +16,15 @@
     }
 
     function get_files_path($project) {
+        $splice = [];
         $files = get_files($project);
         foreach ($files as $key => $value) {
+            if (preg_match("/thumbnail/", $value))
+                array_push($splice, $key);
             $files[$key] = "/assets/__PROJECTS/" . $project . "/" . $files[$key];
+        }
+        foreach ($splice as $key => $value) {
+                array_splice($files, $value - $key, 1);
         }
         return $files;
     }
