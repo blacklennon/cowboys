@@ -58,7 +58,7 @@ o ci aspellabore num sinum nos quidus, tquaeped ut quo omnisi iunti dipsunt Ecti
                                     else if (pathinfo($value, PATHINFO_EXTENSION) === 'txt') {
                                         echo '<div class="img img'.($div+1).' secondaryImg projectDiv" id="img'.($div+1).'-'.$key.'">
                                         <ul>
-                                           '.get_text($project).'
+                                            '.get_text($project).'
                                         </ul>
                                         </div>';
                                     }
@@ -70,7 +70,7 @@ o ci aspellabore num sinum nos quidus, tquaeped ut quo omnisi iunti dipsunt Ecti
                     }?>
                 </div>
             </div>
-            <div class="project_infos"><span id="projectInfos"></span></div>
+            <div class="project_infos"><span id="projectInfos">Projet</span></div>
             <div class="contact_link" onclick="DoubleIssou()">Contact</div>
             <div class="bottom_contact_text" id="bottomContactText">
                 <ul>
