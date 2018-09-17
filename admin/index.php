@@ -1,5 +1,5 @@
 <?php
-    require "functions.php"
+    require "../functions.php"
 ?>
 
 <!DOCTYPE html>
@@ -29,9 +29,12 @@
         <div>
             <?php 
                 // foreach (get_project() as $key => $value) {
-                //     // echo $value + "<br>";
-                // }
-                print_r(get_project())
+                //     echo $value + "<br>";
+                // // }
+                print_r(get_project());
+                print_r(get_files(get_project()[0]));
+                print_r(get_text(get_project()[0]));
+                print_r(get_files_path(get_project()[0]))
             ?>
         </div>
     </body>
