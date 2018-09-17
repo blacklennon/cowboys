@@ -41,7 +41,7 @@ document.body.addEventListener('keydown', (event) => {
       const rightContainer = document.getElementById(`img_container${2}`);
       if (!rightContainer) return;
       const transformPx = rightContainer.style.transform.length === 0 ? 0 : parseInt(rightContainer.style.transform.split('(')[1].split(')')[0]);
-      const rightPageIndex = Math.abs(transformPx / 656);
+      const rightPageIndex = Math.abs(transformPx / 657);
 
       [].slice.call(rightImages).map(rightImage => {
         const rightImageScaleConvertor = (500 - rightImage.clientHeight) / rightImage.clientHeight + 1;
@@ -82,7 +82,7 @@ document.body.addEventListener('keydown', (event) => {
 
       if (rightImages && rightContainer) {
       const transformPx = rightContainer.style.transform.length === 0 ? 0 : parseInt(rightContainer.style.transform.split('(')[1].split(')')[0]);
-      const rightPageIndex = Math.abs(transformPx / 656);
+      const rightPageIndex = Math.abs(transformPx / 657);
 
       [].slice.call(rightImages).map(rightImage => {
         const rightImageScaleConvertor = (500 - rightImage.clientHeight) / rightImage.clientHeight + 1;
@@ -102,7 +102,7 @@ document.body.addEventListener('keydown', (event) => {
         });
 
         const transformPx = leftContainer.style.transform.length === 0 ? 0 : parseInt(leftContainer.style.transform.split('(')[1].split(')')[0]);
-        const leftPageIndex = Math.abs(transformPx / 656);
+        const leftPageIndex = Math.abs(transformPx / 657);
   
         [].slice.call(leftImages).map(leftImage => {
           const leftImageScaleConvertor = (500 - leftImage.clientHeight) / leftImage.clientHeight + 1;
@@ -123,9 +123,7 @@ document.body.addEventListener('keydown', (event) => {
     page--;
     if (page === 0) {
       sliderState = setSliderState(1300);
-
-      const projectInfos = document.getElementById('projectInfos');
-      projectInfos.style.opacity = "0";
+      displayProjectInfo(page);
       
       const rightImages = document.getElementsByClassName(`img1`);
       
@@ -169,7 +167,7 @@ document.body.addEventListener('keydown', (event) => {
         const leftContainer = document.getElementById(`img_container${page - 1}`);
         if (!leftContainer) return;
         const transformPx = leftContainer.style.transform.length === 0 ? 0 : parseInt(leftContainer.style.transform.split('(')[1].split(')')[0]);
-        const leftPageIndex = Math.abs(transformPx / 656);
+        const leftPageIndex = Math.abs(transformPx / 657);
   
         [].slice.call(leftImages).map(leftImage => {
           const leftImageScaleConvertor = (500 - leftImage.clientHeight) / leftImage.clientHeight + 1;
@@ -185,7 +183,7 @@ document.body.addEventListener('keydown', (event) => {
       if (rightImages && rightContainer) {
         if (!rightContainer) return;
         const transformPx = rightContainer.style.transform.length === 0 ? 0 : parseInt(rightContainer.style.transform.split('(')[1].split(')')[0]);
-        const rightPageIndex = Math.abs(transformPx / 656);
+        const rightPageIndex = Math.abs(transformPx / 657);
   
         [].slice.call(rightImages).map(rightImage => {
           const rightImageScaleConvertor = (500 - rightImage.clientHeight) / rightImage.clientHeight + 1;

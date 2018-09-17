@@ -1,5 +1,5 @@
 function handleCloseInfo(clickedButton) {
-  const info = document.getElementById(`info${clickedButton}`);
+  const info = document.getElementById(`info1`);
   if (info) {
     info.style.display = 'none';
   }

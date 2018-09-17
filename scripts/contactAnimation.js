@@ -37,12 +37,10 @@ function issou() {
     if (mainWrapper.style.transform === "scaleY(0.5)") {
       reduceMainWrapper()
       setTimeout(() => {
-        projectInfos.style.opacity = '1';
         reduceSlider();
       }, 200)
     } else {
       reduceSlider()
-      projectInfos.style.opacity = '0';
       setTimeout(reduceMainWrapper, 200)
     }
 }

@@ -7,7 +7,7 @@ document.body.addEventListener('keydown', (event) => {
   if (slider.style.transform === "scaleY(0)") return ;
   
   const transformPx = actualImgContainer.style.transform.length === 0 ? 0 : parseInt(actualImgContainer.style.transform.split('(')[1].split(')')[0]);
-  const pageIndex = Math.abs(transformPx / 656);
+  const pageIndex = Math.abs(transformPx / 657);
   if (keyName === 'ArrowDown')
   {
     const actualImages = document.getElementsByClassName(`img${page}`);
@@ -26,7 +26,7 @@ document.body.addEventListener('keydown', (event) => {
         imageToReveal.style.opacity = "1";
       }
     })
-    actualImgContainer.style.transform=`translateY(${transformPx - 656}px)`;
+    actualImgContainer.style.transform=`translateY(${transformPx - 657}px)`;
   }
   if (keyName === 'ArrowUp' && pageIndex > 0)
   {
@@ -44,6 +44,6 @@ document.body.addEventListener('keydown', (event) => {
         imageToReveal.style.opacity = "1";
       }
     })
-    actualImgContainer.style.transform=`translateY(${transformPx + 656}px)`;
+    actualImgContainer.style.transform=`translateY(${transformPx + 657}px)`;
   }
 })

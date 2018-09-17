@@ -32,7 +32,9 @@ body{
 }
 
 .manifeste {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: .5em;
+    margin-bottom: .3em;
 }
 
 .manifeste:hover {
@@ -50,16 +52,20 @@ body{
   top: -508px;
   text-align:left;
   left:20px;
+  font-size: 1.2rem;
   z-index: 4;
   transition: opacity 0.2s;
 }
 
 .contact_link {
-  left: 564px;
+  right: -1030px;
   position: relative;
   top: -534px;
   transition: opacity 0.2s;
   z-index:4;
+  font-size: 1.2rem;
+  max-width: 200px;
+  margin: 0;
 }
 
 .contact_link:hover {
@@ -100,7 +106,7 @@ body{
   top: -400px;
   width: 1200px;
   height: 270px;
-  background-color: #DDD;
+  font-size: 1.5rem;
   transition: top 0.3s;
   display: flex;
   justify-content: space-evenly;
@@ -117,7 +123,7 @@ body{
 
 .bottom_contact_text ul li::before {
     position: absolute;
-    left: -8px;
+    left: -25px;
 }
 
 .contact-tel::before { content: 'Tel.' }
@@ -127,11 +133,13 @@ body{
 .contact_text {
   position:relative;
   margin:auto;
-  width:1200px;
+  width:1100px;
   top:-400px;
   transition: top 0.3s;
   height: 400px;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,6 +232,10 @@ body{
     color: white;
 }
 
+.projectDiv ul li {
+    margin-bottom: 1rem;
+}
+
 .click_info button {
     height: 25px;
     width: 25px;
@@ -263,7 +275,7 @@ body{
 
 .projectDiv {
   width: 850px;
-  height:600px; 
+  height:600px;
   background-color: #002183;
   margin:auto;
 }
