@@ -58,12 +58,14 @@ body{
 }
 
 .contact_link {
-  left: 540px;
+  right: -1030px;
   position: relative;
   top: -534px;
   transition: opacity 0.2s;
   z-index:4;
   font-size: 1.2rem;
+  max-width: 200px;
+  margin: 0;
 }
 
 .contact_link:hover {
