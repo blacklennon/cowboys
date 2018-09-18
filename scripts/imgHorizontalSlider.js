@@ -21,7 +21,7 @@ document.body.addEventListener('keydown', (event) => {
     || keyName === 'ArrowLeft' && page === 1)
     homePageSlider();
 
-  if (keyName === 'ArrowRight' && page < 4) {
+  if (keyName === 'ArrowRight' && page < document.querySelectorAll('.img_container').length) {
     handleCloseInfo(page);
     page++;
     displayProjectInfo(page);
