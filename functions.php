@@ -10,9 +10,21 @@
         array_splice($files, 0, 2);
         return $files;
     }
-
+    
     function get_text($project) {
         return file_get_contents( __DIR__ . "/assets/__PROJECTS/" . $project . "/text.txt");
+    }
+    
+    function set_text($project, $text) {
+        file_put_contents( __DIR__ . "/assets/__PROJECTS/" . $project . "/text.txt" , $text);
+    }
+    
+    function get_index() {
+        return file_get_contents( __DIR__ . "/assets/__INDEX.txt");
+    }
+        
+    function set_index($text) {
+        file_put_contents( __DIR__ . "/assets/__INDEX.txt" , $text);
     }
 
     function get_files_path($project) {
