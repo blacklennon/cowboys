@@ -18,14 +18,7 @@ o ci aspellabore num sinum nos quidus, tquaeped ut quo omnisi iunti dipsunt Ecti
             <div class="main_logo_container" id="mainWrapper">
 					<div class="click_info" id="info1">
 							<button onclick="handleCloseInfo('1')" ></button>
-							<ul>
-								<li>Narsico Rodriguez<br /><em>Campagne</em></li>
-								<li>Dom Perignon<br /><em>Brand Content</em></li>
-								<li>Perrier Jouet<br /><em>Campagne digitale</em></li>
-								<li>Nom du projet<br /><em>Films</em></li>
-								<li>Narsico Rodriguez<br /><em>Campagne</em></li>
-								<li>M.A.C<br /><em>Campagne Print</em></li>
-							</ul>
+							<?php echo get_index() ?>
 						</div>
                         <img src="./assets/white_logo.svg" class="white_logo" id="whiteLogo"/>
                         <div class="black_logo_inactive" id="blackLogo"> </div>
