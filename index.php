@@ -7,7 +7,7 @@
     <head>
         <meta charset = "utf-8">
         <title></title>
-        <link rel="stylesheet" href="stylee.css">
+        <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src ="scripts/slide.js"></script>
     </head>
     <body>
